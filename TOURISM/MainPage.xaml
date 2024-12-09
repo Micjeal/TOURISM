@@ -1,0 +1,250 @@
+﻿<Page
+    x:Class="TOURISM.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TOURISM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+
+    <Grid Background="#2E8B57">
+        <Image Source="Assets/1 (2).jpg" Stretch="Fill" />
+        <Pivot Title="Explorer">
+
+            <PivotItem Header="Home" Foreground="#FFFFFF">
+                <StackPanel>
+                    <TextBlock Text="WELCOME TO THE WORLD OF TOURISM" 
+            HorizontalAlignment="Center" FontSize="30"
+            Foreground="#FFFFFF" FontWeight="Bold"/>
+                    <TextBlock HorizontalAlignment="Center" FontSize="20"
+                        Text="Discover breathtaking destination and, vibrant cultures andunforgatable experinces ,Your Adventure starts here "/>
+
+                    <Hub Margin="30"  HorizontalAlignment="Center" Height="387">
+                        <HubSection>
+                            <DataTemplate>
+                                <StackPanel CornerRadius="30">
+                                    <Image  Source="Assets/Newyork.jpg" Height="400" Width="400"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </HubSection>
+                        <HubSection>
+                            <DataTemplate>
+                                <StackPanel CornerRadius="30">
+                                    <Image Source="Assets/Tokyo.jpg" Height="400"
+                                           Width="400"/>
+
+                                </StackPanel>
+
+                            </DataTemplate>
+
+                        </HubSection>
+
+                    </Hub>
+                    <TextBlock  Foreground="#FFFFFF" HorizontalAlignment="Center" Margin="0,45,0,0" FontWeight="Bold" FontSize="30" Text="Featured Destination"/>
+                    <StackPanel Background="AntiqueWhite"
+                                CornerRadius="15"
+                                HorizontalAlignment="Center"  
+                                Spacing="5" 
+                                Width="1200" Height="120">
+
+                        <TextBlock Text="🌴  Bail,Indonesia"  Foreground="Black"/>
+                        <TextBlock Text="🌊  santorino, greece" Foreground="Black"/>
+                        <TextBlock Text="🚝  Machu Pichuu" Foreground="Black"/>
+                        <TextBlock Text="🚊  Verica italy" Foreground="Black"/>
+                    </StackPanel>
+                    <Button x:Name="explore" Content="Start Exploring"
+                        CornerRadius="10"   
+                            HorizontalAlignment="Center" Margin="20"
+                            Background="SlateBlue"/>
+                </StackPanel>
+
+            </PivotItem>
+            <PivotItem Header="Destination" Foreground="DarkCyan" FontWeight="Bold" FontSize="20">
+                <ScrollViewer VerticalScrollMode="Auto"
+                              VerticalScrollBarVisibility="Auto">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Margin="10" Background="{ThemeResource AppBarBackgroundThemeBrush}">
+                            <Image Height="400" Width="400"
+                                Source="Assets/Tokyo.jpg"/>
+                            <TextBlock Foreground="blue" FontWeight="Bold"
+                                       HorizontalAlignment="Center" Text="1.Tokyo"/>
+                            <TextBlock Foreground="White" FontWeight="Bold" 
+                                       HorizontalAlignment="Center" Text="Tokyo blends traditional culture with modern texhnology , the historical temples experiences the bustling streets of shibuya and enjoy delicious sushi  "/>
+                        </StackPanel>
+                        <StackPanel Margin="10" Background="{ThemeResource AppBarBackgroundThemeBrush}">
+                            <Image Height="400" Width="400"
+    Source="Assets/Newyork.jpg"/>
+                            <TextBlock Foreground="#FF6B01" FontWeight="Bold" 
+                                       HorizontalAlignment="Center" Text="New York City Usa"/>
+                            <TextBlock Foreground="White" FontWeight="Bold" 
+                                       HorizontalAlignment="Center"
+                                       Text="The big apple known for its iconic skyline culture "/>
+                        </StackPanel >
+                        <StackPanel Margin="10" Background="Wheat">
+                            <Image Height="400" Width="400"
+Source="Assets/beach.jpg"/>
+                            <TextBlock Foreground="#FF6B01"
+                                       FontWeight="Bold" Text="Syndine Australia" HorizontalAlignment="Center"/>
+                            <TextBlock Foreground="White" FontWeight="Bold"
+                                       HorizontalAlignment="Center" Text="The big apple known for its iconic skyline culture Syndey "/>
+                        </StackPanel>
+                        <StackPanel Margin="10">
+                            <Image Height="400" Width="400"
+Source="Assets/Tokyo.jpg"/>
+                            <TextBlock Foreground="Red" FontWeight="Bold"  
+                                       Text="1.Tokyo" HorizontalAlignment="Center"/>
+                            <TextBlock Text="The better the travel." Foreground="Red" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+
+            </PivotItem>
+            <PivotItem Header="Activities" Foreground="#FF6B01">
+                <ScrollViewer VerticalScrollMode="Auto"
+                              VerticalScrollBarVisibility="Auto">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Margin="10" Background="White">
+                            <Image Height="400" Width="400"
+                                Source="Assets/Foggy Hiking Adventure.jpg"/>
+                            <TextBlock Foreground="#FF6B01"
+                                       FontWeight="Bold" HorizontalAlignment="Center" Text="Hiking"/>
+                            <TextBlock Foreground="Black" FontWeight="Bold"
+                                       HorizontalAlignment="Center"
+                                       Text="Explore breathtaking trails and enjoy the great outdoors while hiking through stunning lanscape  "/>
+                        </StackPanel>
+                        <StackPanel Margin="10" Background="White">
+                            <Image Height="400" Width="400"
+                              Source="Assets/beach.jpg"/>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="Beach Relaxation"/>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="Unwind on the soft sands of beautiful beaches and enjoy the sound of the waves  "/>
+                        </StackPanel>
+                        
+                        <StackPanel Margin="10" Background="White">
+                            <Image Height="400" Width="400" Source="Assets/Tulum_.jpg"/>
+                            <TextBlock Text="Cultral tours" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock Foreground="Black" FontWeight="Bold" HorizontalAlignment="Center" Text="Discover the rich history and tradition of the region through guided cultral tours "/>
+                        </StackPanel>
+                        <StackPanel Margin="10" Background="White">
+                            <Image Height="400" Width="400" Source="Assets/shrimp.jpg"/>
+                            <TextBlock Text="Food Tasting" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Indulge in local cultures and flavours with unique food tasting " Foreground="Red" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Travel Tips" Foreground="#FF6B01">
+
+                <ScrollViewer VerticalScrollMode="Auto"
+                              VerticalScrollBarVisibility="Auto">
+                    <StackPanel Orientation="Vertical" >
+                        <TextBlock FontSize="30" FontWeight="Bold" Foreground="Blue" HorizontalAlignment="Center"
+                             Text="Essential Travel Tips"/>
+                        <StackPanel Margin="10" Background="White">
+                            <Image Height="400" Width="400"
+                                Source="Assets/vias.jpg"/>
+                            <TextBlock Foreground="#FF6B01" FontWeight="Bold"
+                                       HorizontalAlignment="Center" Text="1.Always  Check Visa Requirements"/>
+                            <TextBlock Foreground="Black" FontWeight="Bold" 
+                                       HorizontalAlignment="Center" Text="Before travelling ,ensure you have the correct visa for your destinations ,check for any specific entry requirements"/>
+                        </StackPanel>
+                        <StackPanel Margin="10" Background="White">
+                            <Image Height="400" Width="400"
+                               Source="Assets/safe.jpg"/>
+                            <TextBlock Foreground="blue" FontWeight="Bold" 
+                                       HorizontalAlignment="Center" Text="Keep Your Belongings Safe"/>
+                            <TextBlock Text="keep your stuffs stiff "
+                                       Foreground="Black" FontWeight="Bold" 
+                                       HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Margin="10" Background="White">
+                            <Image Height="400" Width="400"
+                        Source="Assets/movements.jpg"/>
+                            <TextBlock Text="Restrict Your Movememnts" 
+                                       HorizontalAlignment="Center"/>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="With no guide dont move to restricted areas "/>
+                        </StackPanel>
+                        <StackPanel Margin="10" Background="White">
+                            <Image Height="400" Width="400"
+                            Source="Assets/movements.jpg"/>
+                            <TextBlock Text="Read the signs " 
+HorizontalAlignment="Center"/>
+                            <TextBlock HorizontalAlignment="Center" 
+                                Text="Indulge in local cultures and flavours with unique food tasting"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+
+            </PivotItem>
+            <PivotItem Header="Gallery">
+
+                <ScrollViewer VerticalScrollMode="Auto"
+                              VerticalScrollBarVisibility="Auto">
+                    <StackPanel Orientation="Vertical">
+
+                        <StackPanel Margin="10">
+                            <Image Height="400" Width="400"
+                                Source="Assets/uganda.jpg"/>
+
+                        </StackPanel>
+                        <StackPanel Margin="10">
+                            <Image Height="400" Width="400"
+                           Source="Assets/kenya.jpg"/>
+
+                        </StackPanel>
+                        <StackPanel Margin="10">
+                            <Image Height="400" Width="400"
+                              Source="Assets/Tokyo.jpg"/>
+
+                        </StackPanel>
+                        <StackPanel Margin="10">
+                            <Image Height="400" Width="400"
+                              Source="Assets/Newyork.jpg"/>
+
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Contact">
+                <StackPanel>
+                    <TextBlock Text="WELCOME TO THE CONTACT SECTION"
+                                HorizontalAlignment="Center"
+                               FontSize="30" Foreground="Blue"
+                               FontWeight="Bold" Margin="20"/>
+                    <TextBlock HorizontalAlignment="Center" 
+                               FontSize="20" 
+                               Text="for inquires email us at"/>
+                    <HyperlinkButton Content="info@tourismworld.com" 
+                                     FontSize="20" HorizontalAlignment="Center"/>
+
+                    <TextBlock Text="Call us" 
+                               HorizontalAlignment="Center"/>
+                    <TextBlock Text="+256701023913" 
+                               HorizontalAlignment="Center"/>
+
+                    <TextBlock Text="Follow Us on social media" 
+                               HorizontalAlignment="Center"/>
+                    <Button Margin="5" Content="FaceBook" 
+                            HorizontalAlignment="Center" 
+                            CornerRadius="5"
+                            Background="DarkGoldenrod"
+                            Click="facebook_click" />
+                    <Button Margin="5" Content="Instagram" 
+                            HorizontalAlignment="Center" 
+                            CornerRadius="5"
+                            Background="DarkGoldenrod"
+                            Click="instagram_click" />
+                    <Button Content="Twitter" HorizontalAlignment="Center" Click="Btn_click"
+                            CornerRadius="5"
+                            Background="DarkGoldenrod"/>
+                </StackPanel>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+
+</Page>
